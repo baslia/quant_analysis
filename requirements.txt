@@ -1,2 +1,4 @@
 bt
 yfinance
+pykalman
+openbb
