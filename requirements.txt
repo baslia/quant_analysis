@@ -2,3 +2,5 @@ bt
 yfinance
 pykalman
 openbb
+quantstats
+backtrader
