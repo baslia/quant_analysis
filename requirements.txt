@@ -4,3 +4,4 @@ pykalman
 openbb
 quantstats
 backtrader
+pandas
