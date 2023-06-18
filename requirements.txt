@@ -6,3 +6,4 @@ quantstats
 backtrader
 pandas
 numpy
+streamlit
