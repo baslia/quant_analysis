@@ -10,3 +10,4 @@ streamlit
 vectorbt
 riskfolio-lib
 pybind11
+cvxpy
