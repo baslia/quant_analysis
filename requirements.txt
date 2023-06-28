@@ -8,3 +8,5 @@ pandas
 numpy
 streamlit
 vectorbt
+riskfolio-lib
+pybind11
