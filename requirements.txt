@@ -11,3 +11,4 @@ vectorbt
 riskfolio-lib
 pybind11
 cvxpy
+alphalens
