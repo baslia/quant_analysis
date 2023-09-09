@@ -13,3 +13,4 @@ pybind11
 cvxpy
 alphalens
 PyPortfolioOpt
+vectorbt
