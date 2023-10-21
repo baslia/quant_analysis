@@ -1,3 +1,4 @@
+from alpha import CarryAndTrendAlphaModel
 
 class FuturesCombinedCarryAndTrendAlgorithm(QCAlgorithm):
 
@@ -12,3 +13,11 @@ class FuturesCombinedCarryAndTrendAlgorithm(QCAlgorithm):
         self.UniverseSettings.DataNormalizationMode = DataNormalizationMode.BackwardsPanamaCanal
         self.UniverseSettings.DataMappingMode = DataMappingMode.LastTradingDay
         self.AddUniverseSelection(AdvancedFuturesUniverseSelectionModel())
+        self.AddAlpha(CarryAndTrendAlphaModel(
+            self,
+            self.GetParameter("emac_filters", 6),
+            self.GetParameter("abs_forecast_cap", 20),  # Hardcoded on p.173
+            self.GetParameter("sigma_span", 32),  # Hardcoded to 32 on p.604
+            self.GetParameter("target_risk", 0.2),  # Recommend value is 0.2 on p.75
+            self.GetParameter("blend_years", 3)  # Number of years to use when blending sigma estimates
+        ))
