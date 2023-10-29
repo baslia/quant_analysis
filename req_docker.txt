@@ -1,0 +1,4 @@
+openbb
+scikit-learn-extra
+pandas
+jupyter
