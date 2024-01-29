@@ -8,6 +8,7 @@ data/
 *.mdb
 src
 .DS_Store
+*.csv
 
 
 # C extensions
