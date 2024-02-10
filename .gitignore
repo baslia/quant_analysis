@@ -9,6 +9,7 @@ data/
 src
 .DS_Store
 *.csv
+AI_strat/catboost_info
 
 
 # C extensions
